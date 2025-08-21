@@ -2,6 +2,9 @@
 
 import jsonwebtoken = require('jsonwebtoken');
 import { randomUUID } from 'crypto';
+import { AdvancedCommerceInAppRequest } from './models/AdvancedCommerceInAppRequest'
+
+export { AdvancedCommerceInAppRequest }
 
 class BaseSignatureCreator {
     private audience: string
@@ -91,8 +94,6 @@ export class IntroductoryOfferEligibilitySignatureCreator extends BaseSignatureC
         return super.internalCreateSignature(featureSpecificClaims)
     }
 }
-
-export interface AdvancedCommerceInAppRequest {}
 
 export class AdvancedCommerceInAppSignatureCreator extends BaseSignatureCreator {
     /**

@@ -74,9 +74,67 @@ export { TransactionReason } from './models/TransactionReason'
 export { Type } from './models/Type'
 export { UserStatus } from './models/UserStatus'
 export { PromotionalOfferSignatureCreator } from './promotional_offer'
-export { PromotionalOfferV2SignatureCreator, AdvancedCommerceInAppSignatureCreator, AdvancedCommerceInAppRequest, IntroductoryOfferEligibilitySignatureCreator } from './jws_signature_creator'
+export { PromotionalOfferV2SignatureCreator, AdvancedCommerceInAppSignatureCreator, IntroductoryOfferEligibilitySignatureCreator } from './jws_signature_creator'
 export { DecodedSignedData } from './models/DecodedSignedData'
 export { AppTransaction } from './models/AppTransaction'
+
+// Advanced Commerce API - Enums
+export { AdvancedCommerceEffective, AdvancedCommerceEffectiveValidator } from './models/AdvancedCommerceEffective'
+export { AdvancedCommerceOfferPeriod, AdvancedCommerceOfferPeriodValidator } from './models/AdvancedCommerceOfferPeriod'
+export { AdvancedCommerceOfferReason, AdvancedCommerceOfferReasonValidator } from './models/AdvancedCommerceOfferReason'
+export { AdvancedCommercePeriod, AdvancedCommercePeriodValidator } from './models/AdvancedCommercePeriod'
+export { AdvancedCommerceReason, AdvancedCommerceReasonValidator } from './models/AdvancedCommerceReason'
+export { AdvancedCommerceRefundReason, AdvancedCommerceRefundReasonValidator } from './models/AdvancedCommerceRefundReason'
+export { AdvancedCommerceRefundType, AdvancedCommerceRefundTypeValidator } from './models/AdvancedCommerceRefundType'
+
+// Advanced Commerce API - Base Interfaces
+export { AdvancedCommerceInAppRequest } from './models/AdvancedCommerceInAppRequest'
+export { AdvancedCommerceRequest } from './models/AdvancedCommerceRequest'
+export { AdvancedCommerceResponse, AdvancedCommerceResponseValidator } from './models/AdvancedCommerceResponse'
+export { AdvancedCommerceRequestInfo, AdvancedCommerceRequestInfoValidator } from './models/AdvancedCommerceRequestInfo'
+export { AdvancedCommerceRequestDescriptors, AdvancedCommerceRequestDescriptorsValidator } from './models/AdvancedCommerceRequestDescriptors'
+export { AdvancedCommerceRequestOffer, AdvancedCommerceRequestOfferValidator } from './models/AdvancedCommerceRequestOffer'
+
+// Advanced Commerce API - Core Data Classes
+export { AdvancedCommerceDescriptors, AdvancedCommerceDescriptorsValidator } from './models/AdvancedCommerceDescriptors'
+export { AdvancedCommerceOffer, AdvancedCommerceOfferValidator } from './models/AdvancedCommerceOffer'
+export { AdvancedCommerceOneTimeChargeItem, AdvancedCommerceOneTimeChargeItemValidator } from './models/AdvancedCommerceOneTimeChargeItem'
+export { AdvancedCommerceOneTimeChargeCreateRequest, AdvancedCommerceOneTimeChargeCreateRequestValidator } from './models/AdvancedCommerceOneTimeChargeCreateRequest'
+export { AdvancedCommerceSubscriptionCreateItem, AdvancedCommerceSubscriptionCreateItemValidator } from './models/AdvancedCommerceSubscriptionCreateItem'
+export { AdvancedCommerceSubscriptionReactivateItem, AdvancedCommerceSubscriptionReactivateItemValidator } from './models/AdvancedCommerceSubscriptionReactivateItem'
+export { AdvancedCommerceSubscriptionChangeMetadataDescriptors, AdvancedCommerceSubscriptionChangeMetadataDescriptorsValidator } from './models/AdvancedCommerceSubscriptionChangeMetadataDescriptors'
+export { AdvancedCommerceSubscriptionModifyPeriodChange, AdvancedCommerceSubscriptionModifyPeriodChangeValidator } from './models/AdvancedCommerceSubscriptionModifyPeriodChange'
+
+// Advanced Commerce API - Core Request Classes
+export { AdvancedCommerceSubscriptionCreateRequest, AdvancedCommerceSubscriptionCreateRequestValidator } from './models/AdvancedCommerceSubscriptionCreateRequest'
+export { AdvancedCommerceSubscriptionMigrateRequest, AdvancedCommerceSubscriptionMigrateRequestValidator } from './models/AdvancedCommerceSubscriptionMigrateRequest'
+export { AdvancedCommerceSubscriptionModifyInAppRequest, AdvancedCommerceSubscriptionModifyInAppRequestValidator } from './models/AdvancedCommerceSubscriptionModifyInAppRequest'
+export { AdvancedCommerceSubscriptionReactivateInAppRequest, AdvancedCommerceSubscriptionReactivateInAppRequestValidator } from './models/AdvancedCommerceSubscriptionReactivateInAppRequest'
+export { AdvancedCommerceSubscriptionCancelRequest, AdvancedCommerceSubscriptionCancelRequestValidator } from './models/AdvancedCommerceSubscriptionCancelRequest'
+export { AdvancedCommerceSubscriptionRevokeRequest, AdvancedCommerceSubscriptionRevokeRequestValidator } from './models/AdvancedCommerceSubscriptionRevokeRequest'
+export { AdvancedCommerceRequestRefundRequest, AdvancedCommerceRequestRefundRequestValidator } from './models/AdvancedCommerceRequestRefundRequest'
+export { AdvancedCommerceSubscriptionPriceChangeRequest, AdvancedCommerceSubscriptionPriceChangeRequestValidator } from './models/AdvancedCommerceSubscriptionPriceChangeRequest'
+export { AdvancedCommerceSubscriptionChangeMetadataRequest, AdvancedCommerceSubscriptionChangeMetadataRequestValidator } from './models/AdvancedCommerceSubscriptionChangeMetadataRequest'
+
+// Advanced Commerce API - Core Response Classes
+export { AdvancedCommerceRequestRefundResponse, AdvancedCommerceRequestRefundResponseValidator } from './models/AdvancedCommerceRequestRefundResponse'
+export { AdvancedCommerceSubscriptionCancelResponse, AdvancedCommerceSubscriptionCancelResponseValidator } from './models/AdvancedCommerceSubscriptionCancelResponse'
+export { AdvancedCommerceSubscriptionChangeMetadataResponse, AdvancedCommerceSubscriptionChangeMetadataResponseValidator } from './models/AdvancedCommerceSubscriptionChangeMetadataResponse'
+export { AdvancedCommerceOneTimeChargeCreateResponse, AdvancedCommerceOneTimeChargeCreateResponseValidator } from './models/AdvancedCommerceOneTimeChargeCreateResponse'
+
+// Advanced Commerce API - Item Management Classes
+export { AdvancedCommerceSubscriptionMigrateItem, AdvancedCommerceSubscriptionMigrateItemValidator } from './models/AdvancedCommerceSubscriptionMigrateItem'
+export { AdvancedCommerceSubscriptionMigrateRenewalItem, AdvancedCommerceSubscriptionMigrateRenewalItemValidator } from './models/AdvancedCommerceSubscriptionMigrateRenewalItem'
+export { AdvancedCommerceSubscriptionModifyAddItem, AdvancedCommerceSubscriptionModifyAddItemValidator } from './models/AdvancedCommerceSubscriptionModifyAddItem'
+export { AdvancedCommerceSubscriptionModifyChangeItem, AdvancedCommerceSubscriptionModifyChangeItemValidator } from './models/AdvancedCommerceSubscriptionModifyChangeItem'
+export { AdvancedCommerceSubscriptionModifyRemoveItem, AdvancedCommerceSubscriptionModifyRemoveItemValidator } from './models/AdvancedCommerceSubscriptionModifyRemoveItem'
+export { AdvancedCommerceSubscriptionPriceChangeItem, AdvancedCommerceSubscriptionPriceChangeItemValidator } from './models/AdvancedCommerceSubscriptionPriceChangeItem'
+export { AdvancedCommerceSubscriptionChangeMetadataItem, AdvancedCommerceSubscriptionChangeMetadataItemValidator } from './models/AdvancedCommerceSubscriptionChangeMetadataItem'
+export { AdvancedCommerceRequestRefundItem, AdvancedCommerceRequestRefundItemValidator } from './models/AdvancedCommerceRequestRefundItem'
+export { AdvancedCommerceSubscriptionModifyDescriptors, AdvancedCommerceSubscriptionModifyDescriptorsValidator } from './models/AdvancedCommerceSubscriptionModifyDescriptors'
+
+// Advanced Commerce API - Utility Classes
+export { AdvancedCommerceValidationUtils } from './models/AdvancedCommerceValidationUtils'
 
 import jsonwebtoken = require('jsonwebtoken');
 import { NotificationHistoryRequest } from './models/NotificationHistoryRequest';
