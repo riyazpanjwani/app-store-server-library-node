@@ -407,7 +407,7 @@ export class AppStoreServerAPIClient {
      * @param consumptionRequest    The request body containing consumption information.
      * @throws APIException If a response was returned indicating the request could not be processed
      * @deprecated Use {@link sendConsumptionInformation} instead
-     * {@link https://developer.apple.com/documentation/appstoreserverapi/send_consumption_information Send Consumption Information}
+     * {@link https://developer.apple.com/documentation/appstoreserverapi/send-consumption-information-v1 Send Consumption Information}
      */
     public async sendConsumptionData(transactionId: string, consumptionRequest: ConsumptionRequestV1): Promise<void> {
         await this.makeRequest("/inApps/v1/transactions/consumption/" + transactionId, "PUT", {}, consumptionRequest, null, 'application/json');
